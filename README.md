@@ -34,6 +34,9 @@ subnet 20.20.20.0 netmask 255.255.255.224 {
 }
 ```
 
+Para saber el rango de ips podemos poner en la terminal de `ipcalc 20.20.20.0/27` y te devuelve el numero de ips que caben dentro de la red.
+A partir de aqui podemos asignar como queramos el rango, manteniendo el numero de ips correcto.
+
 Una vez configurado presiona `ctrl+s` y seguido `ctrl+x` y enter si es necesario.
 
 Despues de configurar el server lo reiniciamos, lo puedes hacer con el siguiente comando:
