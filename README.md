@@ -2,9 +2,9 @@
 > Las maquinas virtuales tienen que tener configurado la red como `adaptador puente`
 
 ### Informacion de la red:
- - netmask `20.20.20.0` / `27`
- - range from `192.168.1.10` to `192.168.1.15`;
- - subnet `192.168.1.0`
+ - subnet `20.20.20.0` / `27`
+ - range from `20.20.20.10` to `20.20.20.15`;
+ - netmask `255.255.255.224`
  - dns-server from google.com `8.8.8.8`, alt `8.8.4.4`
 
 ## Instalation
@@ -26,9 +26,9 @@ sudo nano /etc/dhcp/dhcpd.conf
 Luego en la conf pondremos el siguiente texto:
 
 ```conf
-subnet 192.168.1.0 netmask 20.20.20.0 {
-    range 192.168.1.10 192.168.1.15;
-    option routers 192.168.1.1;
+subnet 20.20.20.0 netmask 255.255.255.224 {
+    range 20.20.20.10 20.20.20.15;
+    option routers 20.20.20.1;
     option domain-name-servers 8.8.8.8, 8.8.4.4;
     option domain-name "exmaple.com";
 }
