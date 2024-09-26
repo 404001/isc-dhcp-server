@@ -1,5 +1,7 @@
 > [!IMPORTANT]
 > Las maquinas virtuales tienen que tener configurado la red como `adaptador puente`
+>
+> En cada maquina al iniciarla es recomendable hacer un `sudo apt upgrade` antes de todo.
 
 ### Informacion de la red:
  - subnet `20.20.20.0` / `27`
