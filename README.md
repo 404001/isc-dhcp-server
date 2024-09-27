@@ -35,6 +35,8 @@ network:
    version: 2
 ```
 
+Despues tendremos q entrar en `/etc/default/isc-dhcp-server` y poner el adaptador en ipv4
+
 ## Instalation
 
 Lo primero es instalar `isc-dhcp-server` en una de las 2 maquinas, solo instalar el server!
