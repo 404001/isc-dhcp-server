@@ -5,6 +5,12 @@
 >
 > En cada maquina al iniciarla es recomendable hacer un `sudo apt upgrade` antes de todo.
 
+### Informacion de la red:
+ - subnet `20.20.20.0` / `27`
+ - range from `20.20.20.10` to `20.20.20.15`;
+ - netmask `255.255.255.224`
+ - dns-server from google.com `8.8.8.8`, alt `8.8.4.4`
+
 ## Configurar la red
 
 Lo primero es entrar en:
@@ -28,12 +34,6 @@ network:
          dhcp4: true
    version: 2
 ```
-
-### Informacion de la red:
- - subnet `20.20.20.0` / `27`
- - range from `20.20.20.10` to `20.20.20.15`;
- - netmask `255.255.255.224`
- - dns-server from google.com `8.8.8.8`, alt `8.8.4.4`
 
 ## Instalation
 
