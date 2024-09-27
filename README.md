@@ -1,6 +1,8 @@
 > [!IMPORTANT]
 > Las maquinas virtuales tienen que tener configurado la red como `adaptador puente`
 >
+> Y si tienes mas servidores dhcp, lo mejor es poner este en `red interna`
+>
 > En cada maquina al iniciarla es recomendable hacer un `sudo apt upgrade` antes de todo.
 
 ### Informacion de la red:
