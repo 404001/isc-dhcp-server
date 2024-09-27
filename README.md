@@ -5,6 +5,30 @@
 >
 > En cada maquina al iniciarla es recomendable hacer un `sudo apt upgrade` antes de todo.
 
+## Configurar la red
+
+Lo primero es entrar en:
+
+```
+sudo nano /etc/netplan/50-cloud-init.yml
+```
+y poner la siguien configuracion relacionada con nuestro server DHCP
+
+```
+network:
+   ethernets:
+      enp0s8:
+         addresses:
+            - 20.20.20.5
+         gateway4: 20.20.20.1
+         nameservers:
+            addresses:
+               - 8.8.8.8
+               - 8.8.4.4
+         dhcp4: true
+   version: 2
+```
+
 ### Informacion de la red:
  - subnet `20.20.20.0` / `27`
  - range from `20.20.20.10` to `20.20.20.15`;
