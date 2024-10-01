@@ -25,8 +25,8 @@ network:
    ethernets:
       enp0s8:
          addresses:
-            - 20.20.20.5/27
-         gateway4: 20.20.20.1
+            - 172.16.0.0/24
+         gateway4: 172.16.0.1
          nameservers:
             addresses:
                - 8.8.8.8
@@ -56,9 +56,9 @@ sudo nano /etc/dhcp/dhcpd.conf
 Luego en la conf pondremos el siguiente texto:
 
 ```conf
-subnet 20.20.20.0 netmask 255.255.255.224 {
-    range 20.20.20.10 20.20.20.15;
-    option routers 20.20.20.1;
+subnet 172.16.0.0 netmask 255.255.255.224 {
+    range 172.16.0.10 172.16.0.100;
+    option routers 172.16.0.1;
     option domain-name-servers 8.8.8.8, 8.8.4.4;
     option domain-name "exmaple.com";
 }
