@@ -35,7 +35,7 @@ network:
    version: 2
 ```
 
-Despues tendremos q entrar en `/etc/default/isc-dhcp-server` y poner el adaptador en ipv4
+Despues tendremos q entrar en `/etc/default/isc-dhcp-server` y poner el adaptador en ipv4, para aplicar cambios usa `netplan apply`
 
 ## Instalation
 
