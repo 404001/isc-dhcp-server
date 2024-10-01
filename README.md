@@ -56,7 +56,7 @@ sudo nano /etc/dhcp/dhcpd.conf
 Luego en la conf pondremos el siguiente texto:
 
 ```conf
-subnet 172.16.0.0 netmask 255.255.255.224 {
+subnet 172.16.0.0 netmask 255.255.255.0 {
     range 172.16.0.10 172.16.0.100;
     option routers 172.16.0.1;
     option domain-name-servers 8.8.8.8, 8.8.4.4;
