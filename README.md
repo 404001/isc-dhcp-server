@@ -25,7 +25,7 @@ network:
    ethernets:
       enp0s8:
          addresses:
-            - 20.20.20.5
+            - 20.20.20.5/27
          gateway4: 20.20.20.1
          nameservers:
             addresses:
