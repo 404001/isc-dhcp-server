@@ -21,7 +21,7 @@
 2. **Configurar IPv4:**
    - Selecciona `Protocolo de Internet versión 4 (TCP/IPv4)` y haz clic en `Propiedades`.
    - Selecciona la opción `Usar la siguiente dirección IP` y configura de la siguiente manera:
-     - Dirección IP: `172.16.0.10` (ajusta según sea necesario dentro del rango)
+     - Dirección IP: `172.16.0.100` (ajusta según sea necesario dentro del rango)
      - Máscara de subred: `255.255.255.0`
      - Puerta de enlace predeterminada: `172.16.0.1`
      - Servidores DNS: 
@@ -41,11 +41,11 @@
 
 2. **Configurar el servidor DHCP:**
    - Una vez instalado, ve al `Administrador de DHCP`.
-   - Haz clic derecho en tu servidor DHCP y selecciona `Nueva ámbito`.
-   - Configura el nuevo ámbito con la siguiente información:
-     - Nombre del ámbito: `MiAmbito`
-     - Rango de direcciones IP: `172.16.0.10` a `172.16.0.100`
-     - Máscara de subred: `255.255.255.0`
+   - Haz clic derecho en tu servidor DHCP y selecciona `Nueva ambito`.
+   - Configura el nuevo ambito con la siguiente información:
+     - Nombre: `Paco`
+     - Rango de direcciones IP: `172.16.0.100` a `172.16.0.200`
+     - Mascara de subred: `255.255.255.0`
      - Puerta de enlace: `172.16.0.1`
      - Servidores DNS: `8.8.8.8` y `8.8.4.4`
 
@@ -53,6 +53,8 @@
    - Asegúrate de habilitar el ámbito después de crearlo.
 
 ## Configuración del cliente
+
+Puedes probar el paso 3 de primeras
 
 1. **Configurar un cliente para obtener IP automáticamente:**
    - Ve a `Panel de Control` > `Red e Internet` > `Centro de redes y recursos compartidos`.
@@ -76,8 +78,6 @@
 3. **Verificar la IP obtenida:**
    - Para comprobar la dirección IP asignada, utiliza el siguiente comando:
      ```bash
-     ipconfig
+     ipconfig /all
      ```
    - Asegúrate de que la nueva dirección IP esté dentro del rango configurado.
-
----
