@@ -1,16 +1,15 @@
+> [!IMPORTANT]
+> Las maquinas virtuales tienen que tener configurado la red como `adaptador puente`
+>
+> Y si tienes mas servidores dhcp, lo mejor es poner este en `red interna`
+>
+> En cada maquina al iniciarla es recomendable hacer un `sudo apt upgrade` antes de todo.
 
----
-
-> **¡IMPORTANTE!**  
-> Las máquinas virtuales deben tener configurada la red como `Adaptador Puente`.  
-> Si tienes más servidores DHCP, lo mejor es poner este en `Red Interna`.  
-> En cada máquina, al iniciarla, es recomendable ejecutar `Windows Update` antes de todo.
-
-### Información de la red:
-- Subred: `172.16.0.0` / `24`
-- Rango de direcciones IP: `172.16.0.10` a `172.16.0.100`
-- Máscara de subred: `255.255.255.0`
-- Servidor DNS de Google: `8.8.8.8`, alternativo `8.8.4.4`
+### Informacion de la red:
+ - subnet `172.16.0.0` / `24`
+ - range from `172.16.0.100` to `172.16.0.200`;
+ - netmask `255.255.255.0`
+ - dns-server from google.com `8.8.8.8`, alt `8.8.4.4`
 
 ## Configurar la red
 
